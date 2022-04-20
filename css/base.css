@@ -1,0 +1,46 @@
+:root
+{
+    --couleur_1: #9356DC ;
+	--couleur_2: #FF79DA ;
+    --couleur_3: #99E2D0;
+
+    /* Police spéciale : font-family: 'Shrikhand', cursive; */
+    /* NE PAS OUBLIER
+    
+    MAILTO DANS LE FOOTER
+    
+    
+    */
+}
+
+*
+{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body
+{
+	font-family: 'Roboto', sans-serif;
+	margin: 0px auto;
+	font-size: 15px;
+}
+
+input
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+img
+{
+	display: block;
+}
