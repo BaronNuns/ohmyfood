@@ -1,0 +1,78 @@
+/* - - - - - | Header | - - - - - */
+
+header
+{
+    box-shadow: 0px 0px 5px #AAA;
+    background-color: white;
+    position: relative;
+    z-index: 20;
+}
+
+header a
+{
+    background: url("../images/logo.png") center / 196px 34px no-repeat;
+    display: block;
+    height: 80px;
+}
+
+/* - - - - - | Navigation (Choix du lieu et bouton d'exploration) | - - - - - */
+
+/* Choix du lieu */
+
+nav form
+{
+    background-color: #EAEAEA;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+nav form svg
+{
+    margin-right: 20px;
+}
+
+nav form input
+{
+    background-color: transparent;
+    line-height: 60px;
+    font-weight: 600;
+    font-size: 17px;
+    color: #555;
+    outline: none;
+    border: none;
+    width: 150px;
+}
+
+/* Section d'exploration */
+
+nav .exploration
+{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+nav .exploration h1
+{
+    font-size: 24px;
+}
+
+nav .exploration p
+{
+    margin: 15px 0px 30px 0px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+nav .exploration a
+{
+    background: linear-gradient(170deg, var(--couleur_2), var(--couleur_1));
+    box-shadow: 0px 5px 5px #CACACA;
+    border-radius: 25px;
+    line-height: 50px;
+    margin: 0px auto;
+    font-size: 16px;
+    color: white;
+    display: block;
+    width: 220px;
+}
