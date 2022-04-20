@@ -76,3 +76,52 @@ nav .exploration a
     display: block;
     width: 220px;
 }
+
+/* - - - - - | Section concernant le fonctionnement | - - - - - */
+
+.fonctionnement
+{
+    padding: 50px 20px 65px 20px;
+    background-color: white;
+}
+
+.fonctionnement h2
+{
+    font-size: 24px;
+}
+
+.fonctionnement a
+{
+    box-shadow: 0px 5px 20px #DDD;
+    background-color: #F6F6F6;
+    margin: 25px 0px 0px 10px;
+    align-items: center;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    height: 75px;
+}
+
+.fonctionnement a div
+{
+    background-color: var(--couleur_1);
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    line-height: 25px;
+    font-size: 13px;
+    color: white;
+    left: -12px;
+    width: 25px;
+}
+
+.fonctionnement a svg
+{
+    margin: 0px 25px 0px 35px;
+}
+
+.fonctionnement a p
+{
+    font-weight: 600;
+    font-size: 16px;
+}
