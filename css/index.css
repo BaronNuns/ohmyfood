@@ -220,46 +220,6 @@ nav .exploration p
     height: 80px;
 }
 
-#restaurants a > div .favori
-{
-    position: relative;
-    margin-top: 7px;
-    float: right;
-    height: 24px;
-    width: 24px;
-}
-
-#restaurants a > div .favori div:first-child
-{
-    background: url("../images/coeur_1.png") center / 24px no-repeat;
-    transition: all 200ms;
-    position: absolute;
-    height: 24px;
-    width: 24px;
-}
-
-#restaurants a > div .favori div:last-child
-{
-    background: url("../images/coeur_2.png") center / 24px no-repeat;
-    transition: all 200ms;
-    transform: scale(0);
-    position: absolute;
-    height: 24px;
-    width: 24px;
-    opacity: 0;
-}
-
-#restaurants a > div .favori:hover div:first-child
-{
-    transform: scale(0.9);
-}
-
-#restaurants a > div .favori:hover div:last-child
-{
-    transform: scale(1);
-    opacity: 1;
-}
-
 #restaurants a > div h3
 {
     font-size: 19px;

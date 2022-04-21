@@ -44,43 +44,9 @@ main h1
     font-size: 27px;
 }
 
-main > .favori
+.favori
 {
     margin: 7px 15px 0px 0px;
-    float: right;
-    height: 24px;
-    width: 24px;
-}
-
-main > .favori div:first-child
-{
-    background: url("../images/coeur_1.png") center / 24px no-repeat;
-    transition: all 200ms;
-    position: absolute;
-    height: 24px;
-    width: 24px;
-}
-
-main > .favori div:last-child
-{
-    background: url("../images/coeur_2.png") center / 24px no-repeat;
-    transition: all 200ms;
-    transform: scale(0);
-    position: absolute;
-    height: 24px;
-    width: 24px;
-    opacity: 0;
-}
-
-main > .favori:hover div:first-child
-{
-    transform: scale(0.9);
-}
-
-main > .favori:hover div:last-child
-{
-    transform: scale(1);
-    opacity: 1;
 }
 
 main .categorie
@@ -312,7 +278,7 @@ main .bouton_principal
         bottom: 100px;
     }
 
-    main > .favori
+    .favori
     {
         margin: 7px 50px 0px 0px;
     }
