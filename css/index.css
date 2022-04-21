@@ -116,32 +116,9 @@ nav .exploration p
     font-size: 18px;
 }
 
-nav .exploration a
+.bouton_principal
 {
-    background: linear-gradient(170deg, var(--couleur_2), var(--couleur_1));
-    box-shadow: 0px 5px 5px #CACACA;
-    border-radius: 25px;
-    position: relative;
-    line-height: 50px;
-    margin: 0px auto;
-    font-size: 16px;
-    color: white;
-    display: block;
     width: 220px;
-}
-
-nav .exploration a:hover{box-shadow: 0px 5px 5px #BBB;}
-
-nav .exploration a:hover::before
-{
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 25px;
-    position: absolute;
-    height: 50px;
-    width: 220px;
-    content: "";
-    left: 0px;
-    top: 0px;
 }
 
 /* - - - - - | Section concernant le fonctionnement | - - - - - */
@@ -198,12 +175,12 @@ nav .exploration a:hover::before
 
 /* - - - - - | Section concernant les restaurants | - - - - - */
 
-.restaurants
+#restaurants
 {
     padding: 50px 20px 65px 20px;
 }
 
-.restaurants a
+#restaurants a
 {
     box-shadow: 0px 5px 5px #EEE;
     border-radius: 15px;
@@ -213,7 +190,7 @@ nav .exploration a:hover::before
     display: block;
 }
 
-.restaurants a > p
+#restaurants a > p
 {
     background-color: var(--couleur_3);
     border-radius: 5px;
@@ -222,25 +199,28 @@ nav .exploration a:hover::before
     padding: 0px 15px;
     color: #008766;
     font-weight: 600;
+    z-index: 50;
     right: 12px;
     top: 12px;
 }
 
-.restaurants a img
+#restaurants a img
 {
     object-fit: cover;
     height: 175px;
     width: 100%;
 }
 
-.restaurants a > div
+#restaurants a:hover img{opacity: 0.8;}
+
+#restaurants a > div
 {
     padding: 15px 25px 15px 15px;
     background-color: white;
     height: 80px;
 }
 
-.restaurants a > div .favori
+#restaurants a > div .favori
 {
     position: relative;
     margin-top: 7px;
@@ -249,7 +229,7 @@ nav .exploration a:hover::before
     width: 24px;
 }
 
-.restaurants a > div .favori div:first-child
+#restaurants a > div .favori div:first-child
 {
     background: url("../images/coeur_1.png") center / 24px no-repeat;
     transition: all 200ms;
@@ -258,7 +238,7 @@ nav .exploration a:hover::before
     width: 24px;
 }
 
-.restaurants a > div .favori div:last-child
+#restaurants a > div .favori div:last-child
 {
     background: url("../images/coeur_2.png") center / 24px no-repeat;
     transition: all 200ms;
@@ -269,23 +249,23 @@ nav .exploration a:hover::before
     opacity: 0;
 }
 
-.restaurants a > div .favori:hover div:first-child
+#restaurants a > div .favori:hover div:first-child
 {
     transform: scale(0.9);
 }
 
-.restaurants a > div .favori:hover div:last-child
+#restaurants a > div .favori:hover div:last-child
 {
     transform: scale(1);
     opacity: 1;
 }
 
-.restaurants a > div h3
+#restaurants a > div h3
 {
     font-size: 19px;
 }
 
-.restaurants a > div p
+#restaurants a > div p
 {
     margin-top: 5px;
     font-size: 17px;
@@ -295,20 +275,20 @@ nav .exploration a:hover::before
 {
     /* - - - - - | Section concernant les restaurants | - - - - - */
 
-    .restaurants
+    #restaurants
     {
         padding: 50px 0px 20px 20px;
         flex-wrap: wrap;
         display: flex;
     }
 
-    .restaurants h2
+    #restaurants h2
     {
         margin-bottom: 30px;
         width: 100%;
     }
 
-    .restaurants a
+    #restaurants a
     {
         margin: 0px 30px 30px 0px;
         width: calc(50% - 30px);
@@ -381,7 +361,7 @@ nav .exploration a:hover::before
 
     /* - - - - - | Section concernant les restaurants | - - - - - */
 
-    .restaurants
+    #restaurants
     {
         padding: 0px 0px 30px 30px;
         max-width: 1320px;
@@ -390,13 +370,13 @@ nav .exploration a:hover::before
         display: flex;
     }
 
-    .restaurants h2
+    #restaurants h2
     {
         margin-bottom: 30px;
         width: 100%;
     }
 
-    .restaurants a
+    #restaurants a
     {
         margin: 0px 30px 30px 0px;
         width: calc(33% - 30px);

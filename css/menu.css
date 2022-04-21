@@ -1,0 +1,227 @@
+/* - - - - - | Header (retour à l'index) | - - - - - */
+
+header a:first-child
+{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    left: 10px;
+    top: 15px;
+}
+
+header a:first-child:hover{background-color: rgba(0, 0, 0, 0.05);}
+
+header a:first-child svg
+{
+    margin: auto;
+    height: 25px;
+}
+
+/* - - - - - | Corps de la page | - - - - - */
+
+.miniature
+{
+    object-fit: cover;
+    height: 270px;
+    width: 100%;
+}
+
+main
+{
+    border-radius: 45px 45px 0px 0px;
+    background-color: #F6F6F6;
+    position: relative;
+    padding: 35px 20px;
+    bottom: 45px;
+}
+
+main h1
+{
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
+    font-size: 27px;
+}
+
+main > .favori
+{
+    margin: 7px 15px 0px 0px;
+    float: right;
+    height: 24px;
+    width: 24px;
+}
+
+main > .favori div:first-child
+{
+    background: url("../images/coeur_1.png") center / 24px no-repeat;
+    transition: all 200ms;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+}
+
+main > .favori div:last-child
+{
+    background: url("../images/coeur_2.png") center / 24px no-repeat;
+    transition: all 200ms;
+    transform: scale(0);
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    opacity: 0;
+}
+
+main > .favori:hover div:first-child
+{
+    transform: scale(0.9);
+}
+
+main > .favori:hover div:last-child
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+main .categorie
+{
+    transform: scale(0.7);
+    margin-top: 35px;
+    opacity: 0;
+}
+
+main .categorie_1{animation: apparition 0.3s both 0.2s;}
+main .categorie_2{animation: apparition 0.3s both 0.4s;}
+main .categorie_3{animation: apparition 0.3s both 0.6s;}
+
+@keyframes apparition
+{
+	0%
+	{
+		transform: scale(0.7);
+        opacity: 0;
+	}
+	100%
+	{
+		transform: scale(1);
+        opacity: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.categorie h2
+{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.categorie .soulignement
+{
+    background-color: var(--couleur_3);
+    height: 3px;
+    width: 40px;
+}
+
+.categorie button
+{
+    box-shadow: 0px 5px 20px #DDD;
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.categorie button .description
+{
+    padding: 10px 0px 10px 15px;
+    overflow: hidden;
+    height: 70px;
+    flex: 1;
+}
+
+.categorie button .description h3
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 3px;
+    font-size: 17px;
+    height: 25px;
+}
+
+.categorie button .description p
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.categorie button span
+{
+    padding: 0px 25px 12px 15px;
+    align-self: flex-end;
+    font-weight: 600;
+    display: block;
+}
+
+.categorie button .selection
+{
+    background-color: var(--couleur_3);
+    transition: all 500ms;
+    position: relative;
+    display: flex;
+    height: 70px;
+    width: 0px;
+}
+
+.categorie button .selection svg
+{
+    transition: all 500ms;
+    margin: auto;
+}
+
+.categorie button:hover .selection
+{
+    width: 60px;
+}
+
+.categorie button:hover .selection svg
+{
+    transform: rotate(-360deg);
+}
+
+main .bouton_principal
+{
+    position: relative;
+    margin-top: 10px;
+    width: 60%;
+    top: 30px;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) /* Tablettes */
+{
+
+}
+
+@media screen and (min-width: 992px) /* Ordinateurs */
+{
+
+}

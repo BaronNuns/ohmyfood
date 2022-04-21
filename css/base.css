@@ -23,7 +23,7 @@ body
 	font-size: 15px;
 }
 
-input
+input, button
 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
@@ -50,11 +50,41 @@ header
     z-index: 20;
 }
 
-header a
+header a:last-child
 {
     background: url("../images/logo.png") center / 196px 34px no-repeat;
     display: block;
     height: 80px;
+}
+
+/* - - - - - | Bouton principal | - - - - - */
+
+.bouton_principal
+{
+    background: linear-gradient(170deg, var(--couleur_2), var(--couleur_1));
+    box-shadow: 0px 5px 5px #CACACA;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    line-height: 50px;
+    margin: 0px auto;
+    font-size: 16px;
+    color: white;
+    display: block;
+}
+
+.bouton_principal:hover{box-shadow: 0px 5px 5px #BBB;}
+
+.bouton_principal:hover::before
+{
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    position: absolute;
+    height: 50px;
+    width: 220px;
+    content: "";
+    left: 0px;
+    top: 0px;
 }
 
 /* - - - - - | Pied de page | - - - - - */
@@ -97,7 +127,7 @@ footer a:hover svg{fill: #DDD;}
 {
     /* - - - - - | Header | - - - - - */
 
-    header a
+    header a:last-child
     {
         height: 90px;
     }
@@ -121,7 +151,7 @@ footer a:hover svg{fill: #DDD;}
 
     /* - - - - - | Header | - - - - - */
 
-    header a
+    header a:last-child
     {
         height: 100px;
     }
