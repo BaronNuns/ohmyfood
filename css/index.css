@@ -1,20 +1,3 @@
-/* - - - - - | Header | - - - - - */
-
-header
-{
-    box-shadow: 0px 0px 5px #AAA;
-    background-color: white;
-    position: relative;
-    z-index: 20;
-}
-
-header a
-{
-    background: url("../images/logo.png") center / 196px 34px no-repeat;
-    display: block;
-    height: 80px;
-}
-
 /* - - - - - | Navigation (Choix du lieu et bouton d'exploration) | - - - - - */
 
 /* Choix du lieu */
@@ -239,38 +222,114 @@ nav .exploration a:hover::before
     font-size: 17px;
 }
 
-/* - - - - - | Pied de page | - - - - - */
-
-footer
+@media screen and (max-width: 991px) and (min-width: 768px) /* Tablettes */
 {
-    background-color: #353535;
-    min-height: 200px;
-    padding: 20px;
+    /* - - - - - | Section concernant les restaurants | - - - - - */
+
+    .restaurants
+    {
+        padding: 50px 0px 20px 20px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .restaurants h2
+    {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .restaurants a
+    {
+        margin: 0px 30px 30px 0px;
+        width: calc(50% - 30px);
+    }
 }
 
-footer h2
+@media screen and (min-width: 992px) /* Ordinateurs */
 {
-    font-family: 'Shrikhand', cursive;
-    margin-bottom: 15px;
-    font-weight: normal;
-    font-size: 19px;
-    color: white;
+    /* - - - - - | Navigation (Choix du lieu et bouton d'exploration) | - - - - - */
+
+    /* Choix du lieu */
+
+    nav
+    {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    nav form
+    {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Section d'exploration */
+
+    nav .exploration
+    {
+        background: url("../images/fond_exploration.jpg") center / cover;
+        padding: 70px 0px;
+    }
+
+    nav .exploration h1
+    {
+        font-size: 30px;
+    }
+
+    nav .exploration p
+    {
+        margin: 35px 0px 45px 0px;
+        font-size: 19px;
+    }
+
+    /* - - - - - | Section concernant le fonctionnement | - - - - - */
+
+    .fonctionnement
+    {
+        padding: 40px 30px 60px 30px;
+        max-width: 1300px;
+        margin: 0px auto;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .fonctionnement h2
+    {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .fonctionnement a
+    {
+        margin: 0px;
+        flex: 1;
+    }
+
+    .fonctionnement a:nth-child(3)
+    {
+        margin: 0px 30px;
+    }
+
+    /* - - - - - | Section concernant les restaurants | - - - - - */
+
+    .restaurants
+    {
+        padding: 0px 0px 30px 30px;
+        max-width: 1320px;
+        margin: 0px auto;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .restaurants h2
+    {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .restaurants a
+    {
+        margin: 0px 30px 30px 0px;
+        width: calc(33% - 30px);
+    }
 }
-
-footer a
-{
-    line-height: 25px;
-    margin-top: 5px;
-    color: white;
-    display: block;
-}
-
-footer a:hover{color: #DDD;}
-
-footer a svg
-{
-    margin-right: 5px;
-    width: 12px;
-}
-
-footer a:hover svg{fill: #DDD;}

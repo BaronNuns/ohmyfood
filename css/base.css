@@ -1,3 +1,5 @@
+/* - - - - - | Bases | - - - - - */
+
 :root
 {
     --couleur_1: #9356DC ;
@@ -36,4 +38,98 @@ a
 img
 {
 	display: block;
+}
+
+/* - - - - - | Header | - - - - - */
+
+header
+{
+    box-shadow: 0px 0px 5px #AAA;
+    background-color: white;
+    position: relative;
+    z-index: 20;
+}
+
+header a
+{
+    background: url("../images/logo.png") center / 196px 34px no-repeat;
+    display: block;
+    height: 80px;
+}
+
+/* - - - - - | Pied de page | - - - - - */
+
+footer
+{
+    background-color: #353535;
+    min-height: 200px;
+    padding: 20px;
+}
+
+footer h2
+{
+    font-family: 'Shrikhand', cursive;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 19px;
+    color: white;
+}
+
+footer a
+{
+    line-height: 25px;
+    margin-top: 5px;
+    color: white;
+    display: block;
+}
+
+footer a:hover{color: #DDD;}
+
+footer a svg
+{
+    margin-right: 5px;
+    width: 12px;
+}
+
+footer a:hover svg{fill: #DDD;}
+
+@media screen and (max-width: 991px) and (min-width: 768px) /* Tablettes */
+{
+    /* - - - - - | Header | - - - - - */
+
+    header a
+    {
+        height: 90px;
+    }
+
+    /* - - - - - | Pied de page | - - - - - */
+
+    footer
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px) /* Ordinateurs */
+{
+    /* - - - - - | Bases | - - - - - */
+
+    body
+    {
+        background-color: white;
+    }
+
+    /* - - - - - | Header | - - - - - */
+
+    header a
+    {
+        height: 100px;
+    }
+
+    /* - - - - - | Pied de page | - - - - - */
+
+    footer
+    {
+        text-align: center;
+    }
 }
