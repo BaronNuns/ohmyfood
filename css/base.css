@@ -81,7 +81,7 @@ header a:last-child
     border-radius: 25px;
     position: absolute;
     height: 50px;
-    width: 220px;
+    width: 100%;
     content: "";
     left: 0px;
     top: 0px;

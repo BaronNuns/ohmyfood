@@ -108,18 +108,6 @@ main .categorie_3{animation: apparition 0.3s both 0.6s;}
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .categorie h2
 {
     text-transform: uppercase;
@@ -133,6 +121,13 @@ main .categorie_3{animation: apparition 0.3s both 0.6s;}
     background-color: var(--couleur_3);
     height: 3px;
     width: 40px;
+}
+
+.categorie .cassure_wrap
+{
+    display: none;
+    height: 1px;
+    width: 100%;
 }
 
 .categorie button
@@ -218,10 +213,146 @@ main .bouton_principal
 
 @media screen and (max-width: 991px) and (min-width: 768px) /* Tablettes */
 {
+    /* - - - - - | Bases | - - - - - */
 
+    body
+    {
+        background-color: white;
+    }
+
+    /* - - - - - | Header (retour à l'index) | - - - - - */
+
+    header a:first-child
+    {
+        left: 32px;
+        top: 20px;
+    }
+
+    /* - - - - - | Corps de la page | - - - - - */
+
+    .miniature
+    {
+        height: 250px;
+        opacity: 0.4;
+    }
+
+    main
+    {
+        padding: 35px 0px 50px 30px;
+        border-radius: 45px;
+        margin: 0px 20px;
+        bottom: 70px;
+        width: auto;
+    }
+
+    main h1
+    {
+        font-size: 32px;
+    }
+
+    .categorie
+    {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .categorie h2
+    {
+        width: 100%;
+    }
+
+    .categorie .cassure_wrap
+    {
+        display: block;
+    }
+
+    .categorie .soulignement
+    {
+        margin-right: 420px;
+    }
+
+    .categorie button
+    {
+        margin: 20px 30px 0px 0px;
+        width: calc(50% - 30px);
+    }
+
+    main .bouton_principal
+    {
+        margin: 50px auto 0px auto;
+        width: 300px;
+        top: 0px;
+    }
 }
 
 @media screen and (min-width: 992px) /* Ordinateurs */
 {
+    /* - - - - - | Header (retour à l'index) | - - - - - */
 
+    header a:first-child
+    {
+        left: 40px;
+        top: 25px;
+    }
+
+    /* - - - - - | Corps de la page | - - - - - */
+
+    .miniature
+    {
+        height: 400px;
+        opacity: 0.4;
+    }
+
+    main
+    {
+        padding: 35px 0px 50px 30px;
+        border-radius: 45px;
+        max-width: 1300px;
+        margin: 0px auto;
+        bottom: 100px;
+    }
+
+    main > .favori
+    {
+        margin: 7px 50px 0px 0px;
+    }
+
+    main h1
+    {
+        font-size: 35px;
+    }
+
+    .categorie
+    {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .categorie h2
+    {
+        width: 100%;
+    }
+
+    .categorie .cassure_wrap
+    {
+        display: block;
+    }
+
+    .categorie .soulignement
+    {
+        margin-right: 820px;
+    }
+
+    .categorie button
+    {
+        margin: 20px 30px 0px 0px;
+        width: calc(33% - 30px);
+    }
+
+    main .bouton_principal
+    {
+        margin: 50px auto 0px auto;
+        width: 300px;
+        top: 0px;
+    }
 }
