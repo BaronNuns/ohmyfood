@@ -96,7 +96,7 @@ main .categorie_3{animation: apparition 0.3s both 0.6s;}
     width: 100%;
 }
 
-.categorie button
+.categorie .item
 {
     box-shadow: 0px 5px 20px #DDD;
     background-color: white;
@@ -110,7 +110,7 @@ main .categorie_3{animation: apparition 0.3s both 0.6s;}
     width: 100%;
 }
 
-.categorie button .description
+.categorie .item .description
 {
     padding: 10px 0px 10px 15px;
     overflow: hidden;
@@ -118,7 +118,7 @@ main .categorie_3{animation: apparition 0.3s both 0.6s;}
     flex: 1;
 }
 
-.categorie button .description h3
+.categorie .item .description h3
 {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -128,14 +128,14 @@ main .categorie_3{animation: apparition 0.3s both 0.6s;}
     height: 25px;
 }
 
-.categorie button .description p
+.categorie .item .description p
 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.categorie button span
+.categorie .item span
 {
     padding: 0px 25px 12px 15px;
     align-self: flex-end;
@@ -143,7 +143,7 @@ main .categorie_3{animation: apparition 0.3s both 0.6s;}
     display: block;
 }
 
-.categorie button .selection
+.categorie .item .selection
 {
     background-color: var(--couleur_3);
     transition: all 500ms;
@@ -153,18 +153,18 @@ main .categorie_3{animation: apparition 0.3s both 0.6s;}
     width: 0px;
 }
 
-.categorie button .selection svg
+.categorie .item .selection svg
 {
     transition: all 500ms;
     margin: auto;
 }
 
-.categorie button:hover .selection
+.categorie .item:hover .selection
 {
     width: 60px;
 }
 
-.categorie button:hover .selection svg
+.categorie .item:hover .selection svg
 {
     transform: rotate(-360deg);
 }
@@ -237,7 +237,7 @@ main .bouton_principal
         margin-right: 420px;
     }
 
-    .categorie button
+    .categorie .item
     {
         margin: 20px 30px 0px 0px;
         width: calc(50% - 30px);
@@ -309,7 +309,7 @@ main .bouton_principal
         margin-right: 820px;
     }
 
-    .categorie button
+    .categorie .item
     {
         margin: 20px 30px 0px 0px;
         width: calc(33% - 30px);
